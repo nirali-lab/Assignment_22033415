@@ -9,7 +9,6 @@ run_tests:
   script:
     - make test
 
-
 build_image:
   before_script:
     - docker login -u $REGISTRY_USER -p $REGISTRY_PASS
