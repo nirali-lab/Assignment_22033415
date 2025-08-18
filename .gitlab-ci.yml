@@ -2,6 +2,11 @@ variables:
   IMAGE_NAME: nurjamia/nurown
   IMAGE_TAG: python-app-1.0
 
+stages:
+  - test
+  - build
+  - deploy
+
 run_tests:
   image: python:3.9-slim
   before_script:
