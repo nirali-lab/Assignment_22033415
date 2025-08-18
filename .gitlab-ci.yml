@@ -1,6 +1,19 @@
+variables:
+  IMAGE_NAME: nanajanashia/demo-app
+  IMAGE_TAG: python-app-1.0
+
 run_tests:
   image: python:3.9-slim
   before_script:
     - apt-get update && apt-get install make
   script:
     - make test
+
+
+
+build_image:
+  before_script:
+    - docker login -u $REGISTRY_USER -p $REGISTRY_PASS
+  script:
+      - docker build -t $IMAGE_NAME:$IMAGE_TAG .
+      - docker push $IMAGE_NAME:$IMAGE_TAG
