@@ -2,8 +2,7 @@
 #Also, dont forget to print the below line in the pipeline log:
 #"Hi all, my name is $My_Name, my student id is $My_StudentID."
 # The variables My_Name and My_StudentID are your actual name and student id, respectively
-# make sure to include the screenshot of the above sentence (available in the pipeline log) 
-# in your assignment report 
+# make sure to include the screenshot of the above sentence (available in the pipeline log) in your assignment report 
 
 variables:
   IMAGE_NAME: 
