@@ -1,11 +1,6 @@
-variables:
-  My_Name: Nur
-  My_StudentID: 123232
-
 run_tests:
   image: python:3.9-slim
   before_script:    
     - apt-get update && apt-get install make    
   script:
-    - make test
-    - echo 'Hi all, my name is' $My_Name ', my student id is ' $My_StudentID '.'
+    - make test    
