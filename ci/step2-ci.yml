@@ -2,10 +2,6 @@ run_tests:
   image: python:3.9-slim
   before_script:
     - apt-get update && apt-get install make
+    - echo 'hi'
   script:
     - make test
-
-build_image:
-  image: docker:28.3.3
-  services:
-    - docker:28.3.3-dind
