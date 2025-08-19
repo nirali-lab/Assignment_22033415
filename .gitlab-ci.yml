@@ -1,3 +1,7 @@
+variables:
+  IMAGE_NAME: nurjamia/nurown
+  IMAGE_TAG: python2
+
 run_tests:
   image: python:3.9-slim
   before_script:
@@ -14,5 +18,5 @@ build_image:
   before_script:
     - docker login -u $REGISTRY_USER -p $REGISTRY_PASS
   script:
-    - docker build -t nurjamia/nurown:python2 .
-    - docker push nurjamia/nurown:python2
+    - docker build -t IMAGE_NAME:$IMAGE_TAG .
+    - docker push IMAGE_NAME:$IMAGE_TAG
