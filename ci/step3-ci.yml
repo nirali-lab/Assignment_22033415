@@ -12,7 +12,7 @@ build_image:
   variables:
     DOCKER_TLS_CERTDIR: "/certs"
   before_script:
-    - docker login -u User_Name -p Password
+    - docker login -u UserName -p Password
   script:
     - docker build -t ImageName:ImageTag .
     - docker push ImageName:ImageTag
