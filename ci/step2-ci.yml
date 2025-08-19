@@ -4,3 +4,8 @@ run_tests:
     - apt-get update && apt-get install make
   script:
     - make test
+
+build_image:
+  image: docker:28.3.3
+  services:
+    - docker:28.3.3-dind
