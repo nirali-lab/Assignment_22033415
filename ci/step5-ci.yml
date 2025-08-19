@@ -1,9 +1,6 @@
 variables:
-  IMAGE_NAME: nurjamia/nurTest
-  IMAGE_TAG: python-app-1.0
-
-stages:
-
+  IMAGE_NAME: 
+  IMAGE_TAG: 
 
 run_tests:
   image: python:3.9-slim
