@@ -1,0 +1,12 @@
+Troubleshooting Notes (write in report)
+While setting up, the original requirements file failed to install psutil==5.8.0 and typed-ast on Python 3.12. I resolved this by upgrading psutil to a newer version and installing a modern black package. Additionally, the pinned pytest==6.2.2 was incompatible with Python 3.12, so I upgraded pytest to the latest version. After these fixes, the tests ran successfully and the application was accessible via my local IP on port 5004.
+
+Troubleshooting Steps
+
+Installed updated versions of psutil, black, and pytest for Python 3.12 compatibility.
+
+Verified app entrypoint and ran Flask with --host=0.0.0.0 --port=5004.
+
+Confirmed accessibility both via 127.0.0.1 and local IP address.
+
+http://127.0.0.1:5004/
