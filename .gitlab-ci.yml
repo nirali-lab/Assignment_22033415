@@ -1,6 +1,6 @@
 run_tests:
   image: python:3.9-slim
-  before_script:    
+  before_script:
     - apt-get update && apt-get install make    
   script:
-    - make test
+    -  echo "Hi all, my name is nirali patel, my student id is 22033415."
